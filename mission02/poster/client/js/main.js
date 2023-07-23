@@ -55,9 +55,6 @@ function setImage(name, alt) {
 
 function setBgColor([colorA , colorB = '#000' ]) {
   const body = getNode("body");
-//   const colorA = color[0]
-//   const colorB = color[1]
-
 
  body.style.background = `linear-gradient(to bottom, ${colorA},${colorB}`;
 }
@@ -69,6 +66,8 @@ function setNameText(name) {
 
   nickName.textContent = name;
 }
+
+//  클릭 이벤트
 
 function handleEvent(e) {
   const target = e.target;
